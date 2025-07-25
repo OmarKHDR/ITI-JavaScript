@@ -132,6 +132,7 @@ input[type="button"] {
     font-size: 0.98em;
     font-weight: 500;
     margin: 5px 2px;
+    width:400px;
 }
 
 input[type="button"]:hover {
@@ -146,4 +147,57 @@ input[type="button"]:hover {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 2px 8px rgba(30,34,40,0.10);
+}
+
+.main-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 0;
+    min-height: calc(100vh - 120px); /* Adjust for header/logo */
+    height: calc(100vh - 120px);
+}
+
+#todo-section {
+    flex: 1 1 0;
+    min-width: 350px;
+    max-width: 500px;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 2px 8px rgba(30,34,40,0.04);
+    padding: 24px 18px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.separator {
+    width: 2px;
+    background: #000000;
+    align-self: stretch;
+    margin: 0 0;
+    border-radius: 1px;
+    height: 100%;
+}
+
+#finished-section {
+    flex: 1 1 0;
+    min-width: 350px;
+    max-width: 500px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 8px rgba(30,34,40,0.04);
+    padding: 24px 18px;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.icon-display-inline {
+    position:relative;
+    display: inline;
 }

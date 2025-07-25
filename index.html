@@ -15,25 +15,38 @@
 	<h1>
 		MY ToDo List
 	</h1>
-	<div id="task-creation-overlay" class="hidden">
-		<div id="task-creation-window">
-			Create New Task
-			<input type="text" id="task-title-input" placeholder="task title">
-			<textarea id="task-description-input" placeholder="task description"></textarea>
-			<input type="button" id="submit-task" value="Create">
+	<div class="main-columns">
+		<div id="todo-section" style="display: block;">
+			<div id="task-creation-overlay" class="hidden">
+				<div id="task-creation-window">
+					Create New Task
+					<input type="text" id="task-title-input" placeholder="task title">
+					<textarea id="task-description-input" placeholder="task description"></textarea>
+					<input type="button" id="submit-task" value="Create">
+				</div>
+			</div>
+			<div class="date" id="today-date"></div>
+			<ul class="todo-list" id="today-todo-list">
+				<!-- <li>
+						<tasktitle></tasktitle>
+						<taskdescription></taskdescription>
+					</li> -->
+			</ul>
+			<input type="button" id="create-tasks" value="Create Task">
+			<input type="button" id="remove-tasks" value="remove tasks">
+			<input type="button" id="save-all-tasks" value="save all tasks">
+			<input type="button" id="remove-all-tasks" value="remove all tasks">
+		</div>
+		<div class="separator"></div>
+		<div id="finished-section">
+			<ul class="todo-list" id="today-finished-list">
+				<!-- <li>
+						<tasktitle></tasktitle>
+						<taskdescription></taskdescription>
+					</li> -->
+			</ul>
 		</div>
 	</div>
-	<div class="date" id="today-date"></div>
-	<ul class="todo-list" id="today-todo-list">
-		<!-- <li>
-				<tasktitle></tasktitle>
-				<taskdescription></taskdescription>
-			</li> -->
-	</ul>
-	<input type="button" id="create-tasks" value="Create Task">
-	<input type="button" id="remove-tasks" value="remove tasks"><br />
-	<input type="button" id="save-all-tasks" value="save all tasks">
-	<input type="button" id="remove-all-tasks" value="remove all tasks">
 	<script src="./main.js"></script>
 </body>
 
